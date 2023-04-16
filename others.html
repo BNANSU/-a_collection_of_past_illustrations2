@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css"><!-- paggetop用 -->
     <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="portfolio_img/favicon.ico" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"><!-- Modaal動画ポップアップ用 -->
+    <!-- <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"> Modaal動画ポップアップ用 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- paggetop用 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
         type="text/javascript"></script><!-- 拡大画像がポップアップ用-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script><!-- Modaal動画ポップアップ用 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script> Modaal動画ポップアップ用 -->
 </head>
 
 <body>
@@ -182,7 +182,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th><a href="portfolio_img/breakfast.mp4" class="video-open"><video class="item_img"
+                        <th><!-- <a href="portfolio_img/breakfast.mp4" class="video-open"> --><video class="item_img"
                                     preload="none" src="portfolio_img/breakfast.mp4" controls></video></a></th>
                         <td><span class="category">動画スクール作品</span><br>
                             <span class="name">Breakfast</span><br>
@@ -193,7 +193,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th><a href="portfolio_img/makingcoffee.mp4" class="video-open"><video class="item_img"
+                        <th><!-- <a href="portfolio_img/makingcoffee.mp4" class="video-open"> --><video class="item_img"
                                     preload="none" src="portfolio_img/makingcoffee.mp4" controls></video></a></th>
                         <td><span class="category">動画スクール作品</span><br>
                             <span class="name">Making Coffee</span><br>
@@ -233,18 +233,18 @@
         });
 
         // 動画のモーダル
-        $(".video-open").modaal({
-            type: 'video',
-            overlay_close: true,//モーダル背景クリック時に閉じるか
-            background: '#28BFE7', // 背景色
-            overlay_opacity: 0.8, // 透過具合
-            before_open: function () {// モーダルが開く前に行う動作
-                $('html').css('overflow-y', 'hidden');/*縦スクロールバーを出さない*/
-            },
-            after_close: function () {// モーダルが閉じた後に行う動作
-                $('html').css('overflow-y', 'scroll');/*縦スクロールバーを出す*/
-            }
-        });
+        //$(".video-open").modaal({
+          //  type: 'video',
+          //  overlay_close: true,//モーダル背景クリック時に閉じるか
+          //  background: '#28BFE7', // 背景色
+          //  overlay_opacity: 0.8, // 透過具合
+          //  before_open: function () {// モーダルが開く前に行う動作
+          //      $('html').css('overflow-y', 'hidden');/*縦スクロールバーを出さない*/
+          //  },
+          //  after_close: function () {// モーダルが閉じた後に行う動作
+          //      $('html').css('overflow-y', 'scroll');/*縦スクロールバーを出す*/
+          //  }
+       // });
     </script>
 </body>
 
