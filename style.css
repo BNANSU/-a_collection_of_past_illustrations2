@@ -141,6 +141,7 @@ header .container {
     justify-content: center;
     height: 563px;
     text-align: center;
+    margin-bottom: 120px;
 }
 
 .mv-container {
@@ -203,6 +204,10 @@ img {
 
 .profile-body p:not(:last-child) {
     margin-bottom: 20px;
+}
+
+.about {
+    padding-bottom: 60px;
 }
 
 /*--------------------------------
@@ -285,6 +290,10 @@ img {
 .categoly-info {
     font-size: 10px;
     margin-top: 5px;
+}
+
+#categoly {
+    padding-top: 60px;
 }
 
 /*--------------------------------
